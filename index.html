@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Name</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eb0000;
+  }
+
+  .animated-name {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    animation: move 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="animated-name">Abanihar Nag</div>
+</body>
+</html>
